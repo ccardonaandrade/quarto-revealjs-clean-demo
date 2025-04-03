@@ -1,0 +1,96 @@
+---
+title: Analítica de los Negocios
+subtitle: ggplot y tidyverse
+format: 
+   clean-revealjs:
+    self-contained: true
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+author:
+  - name: Carlos Cardona Andrade
+    email: carlos.cardona@javeriana.edu.co
+date: last-modified
+---
+  
+  
+## Example slide
+  
+### This is a subtitle
+  
+Before we dive a bit deeper, here is a simple example of the
+[clean theme](https://github.com/grantmcdermott/quarto-revealjs-clean)
+in action. 
+
+- No pictures or anything fancy. Just text for the moment.
+
+Next, we'll take a brief tour of some theme components.
+
+- We'll use the same basic
+structure as the
+[original LaTeX slides](https://raw.githack.com/kylebutts/templates/master/latex-slides/auxiliary/slides.pdf).
+- Note that the [_full suite_](https://quarto.org/docs/presentations/revealjs/)
+of Reveal.js features are available for this Quarto implementation,
+even if we don't cover everything here.
+
+
+## Before you proceed...
+
+### Requirements for the coding examples in this demo
+
+The [clean theme](https://github.com/grantmcdermott/quarto-revealjs-clean) is
+language agnostic. Use it with R, Python, Julia, etc. Or none of the above.
+
+However, this demo uses R code to highlight advanced theme features.
+You'll need to install some software if you'd like to render the demo "as-is".
+
+:::{.callout-warning}
+
+## Required software (this demo only)
+
+### R packages
+
+```{.r}
+install.packages(c("modelsummary", "fixest", "pdftools", "tinytex", "threejs"))
+```
+### TinyTex
+
+```{.bash}
+quarto install tinytex
+```
+While reveal.js presentations are HTML format, we will show an example of how to 
+embed LaTeX tables as images. This requires a working Tex distribution, of which
+TinyTex provides by far the easiest and lightest integration with Quarto. More
+details [here](https://quarto.org/docs/output-formats/pdf-engine.html).
+
+:::
+
+
+# Components {background-color="#40666e"}
+
+## Components
+
+### Ordered and Unordered Lists
+
+Here we have an unordered list.
+
+- first item
+    - sub-item
+- second item
+
+And next we have an ordered one.
+
+1. first item
+    i) sub-item
+2. second item
+
+## Components
+
+### Alerts & Cross-refs {#sec-crossref}
+
+To emphasize specific words or text, you can:
+
+- Use the default `.alert` class, e.g. [important note]{.alert}.
+- Use the `.fg` class for custom colour, e.g. [important note]{.fg style="--col: #e64173"}.
+- Use the `.bg` class for custom background, e.g. [important note]{.bg style="--col: #e64173"}.
+

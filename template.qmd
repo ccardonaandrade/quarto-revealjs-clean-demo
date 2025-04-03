@@ -323,18 +323,6 @@ etable(mods, highlight = .("se" = "complaints"))
 ```
 ````
 
-## Regression tables
-
-### fixest::etable (cont.)
-
-```{r}
-#| output: asis
-
-setFixest_etable(markdown = TRUE, drop = "Constant")
-setFixest_dict(dict)
-
-etable(mods, highlight = .("se" = "complaints"), arraystretch = 1.5)
-```
 
 # Figures {background-color="#40666e"}
 
